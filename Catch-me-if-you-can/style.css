@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56, 54, 54);
+}
+#catch-me-box{
+    width:100px;
+    padding: 15px;
+    background-color: antiquewhite;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+}
