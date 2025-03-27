@@ -27,11 +27,13 @@ body {
 
 .progress-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     margin-bottom: 30px;
-    max-width: 100%;
-    width: 350px;
+    height: 350px;
+    max-height: 100%;
 }
 
 
@@ -40,21 +42,21 @@ body {
     background-color: var(--line-empty);
     position: absolute;
     top: 50%;
-    left: 0%;
-    height: 4px;
-    width: 100%;
-    transform: translateY(-50%);
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    transform: translateY(-50%) translateX(-50%);
     z-index: -1;
 }
 
 .progress {
     background-color: var(--line-fill);
     position: absolute;
-    top: 50%;
-    left: 0%;
-    height: 4px;
-    width: 0%;
-    transform: translateY(-50%);
+    top: 0;
+    left: 50%;
+    height: 0%;
+    width: 4px;
+    transform:  translateX(-50%);
     z-index: -1;
     transition: 0.4s ease;
 }

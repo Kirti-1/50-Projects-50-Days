@@ -35,9 +35,9 @@ function updateTheBar(){
 
     const active = document.querySelectorAll(".active");
     console.log(active.length, circles.length);
-
-    progress.style.width = ((active.length-1)/(circles.length-1)) * 100 + '%';
-
+    const currheight = ((active.length-1)/(circles.length-1)) * 100;
+    progress.style.height = ((active.length-1)/(circles.length-1)) * 100 + '%';
+    
     if(currcounter == circles.length){
         next.disabled = true;
     }else if(currcounter == 1){
