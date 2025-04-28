@@ -1,0 +1,10 @@
+*{
+    background-color: black;
+    color:aliceblue;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
